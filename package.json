@@ -1,18 +1,22 @@
 {
-	"devDependencies": {
-		"lerna": "^2.11.0"
-	},
-	"name": "universal-components-example",
-	"version": "1.0.0",
-	"description": "example mono-repo utilizing universal components in create-react-app, create-react-native-app, and gatsby",
-	"main": "index.js",
-	"repository": "https://github.com/samanthabretous/universal-components-example",
-	"author": "Kurtis Kemple <kurtiskemple@gmail.com>",
-	"license": "MIT",
-	"private": false,
-	"dependencies": {
-		"create-react-native-app": "^1.0.0",
-		"global": "^4.3.2",
-		"react-vr-cli": "^0.3.6"
-	}
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  },
+  "name": "universal-components-example",
+  "version": "1.0.0",
+  "description":
+    "example mono-repo utilizing universal components in create-react-app, create-react-native-app, and gatsby",
+  "main": "index.js",
+  "repository":
+    "https://github.com/samanthabretous/universal-components-example",
+  "author":
+    "Kurtis Kemple <kurtiskemple@gmail.com>, Samantha Bretous <sam@samanthabretous.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "dependencies": {
+    "create-react-native-app": "^1.0.0",
+    "global": "^4.3.2",
+    "react-vr-cli": "^0.3.6"
+  }
 }
