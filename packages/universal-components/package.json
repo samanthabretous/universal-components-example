@@ -1,0 +1,8 @@
+{
+  "name": "universal-components",
+  "version": "1.0.0",
+  "description": "components used across all apps",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false
+}
