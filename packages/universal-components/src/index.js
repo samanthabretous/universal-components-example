@@ -1,6 +1,12 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { View, Text, Image, Animated, StyleSheet } from 'react-primitives';
+import {
+  View,
+  Text,
+  Image,
+  Animated,
+  StyleSheet,
+} from '@kkemple/react-primitives';
 
 const Card = ({ title, subtitle, image }) => (
   <View style={styles.container}>
@@ -44,6 +50,7 @@ const styles = StyleSheet.create({
     height: 150,
   },
   title: {
+    color: '#000000',
     marginBottom: 16,
   },
   subtitle: {

@@ -9,7 +9,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _reactPrimitives = require("react-primitives");
+var _reactPrimitives = require("@kkemple/react-primitives");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -63,6 +63,7 @@ var styles = _reactPrimitives.StyleSheet.create({
     height: 150
   },
   title: {
+    color: '#000000',
     marginBottom: 16
   },
   subtitle: {
