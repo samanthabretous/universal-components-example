@@ -1,6 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "gatsby-uc-example",
+  "description": "Universal components in gatsby",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
@@ -8,9 +9,11 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "^2.0.0-alpha.23",
-    "gatsby-link": "^1.6.40",
+    "gatsby": "next",
+    "gatsby-plugin-react-native-web": "^0.3.0",
+    "inline-style-prefixer": "^4.0.0",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "uc-example-react-eu": "^1.0.0"
   }
 }
