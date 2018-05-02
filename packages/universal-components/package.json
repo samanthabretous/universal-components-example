@@ -2,14 +2,13 @@
   "name": "uc-example-react-eu",
   "version": "1.0.0",
   "description": "Components used across all platforms",
-  "main": "index.js",
+  "main": "dist/index.js",
   "browser": "dist/index.js",
+  "module": "src/index.js",
   "license": "MIT",
   "private": false,
   "dependencies": {
     "prop-types": "^15.6.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
     "react-primitives": "^0.5.0"
   },
   "devDependencies": {
@@ -17,6 +16,8 @@
     "@babel/core": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
     "@babel/preset-react": "^7.0.0-beta.46",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "@storybook/addon-actions": "^3.4.3",
     "@storybook/addon-links": "^3.4.3",
     "@storybook/addons": "^3.4.3",
