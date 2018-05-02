@@ -1,23 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
+import Card from 'uc-example-react-eu';
+
+const title = 'Example Card';
+const subtitle = 'Rendered using react-primitives';
+const image = { uri: 'https://source.unsplash.com/random' };
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+      <View style={{ paddingTop: 40, paddingHorizontal: 16 }}>
+        <Card title={title} subtitle={subtitle} image={image} />
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

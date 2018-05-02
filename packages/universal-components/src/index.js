@@ -15,7 +15,7 @@ const Card = ({ title, subtitle, image }) => (
 Card.propTypes = {
   title: propTypes.string.isRequired,
   subtitle: propTypes.string.isRequired,
-  image: propTypes.oneOf([propTypes.object, propTypes.string]).isRequired,
+  image: propTypes.oneOfType([propTypes.object, propTypes.string]).isRequired,
 };
 
 export default Card;
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     height: 150,
     justifyContent: 'space-between',
-    margin: 16,
+    maxWidth: '100%',
     overflow: 'hidden',
     width: 475,
   },

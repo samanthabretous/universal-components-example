@@ -34,7 +34,7 @@ var Card = function Card(_ref) {
 Card.propTypes = {
   title: _propTypes.default.string.isRequired,
   subtitle: _propTypes.default.string.isRequired,
-  image: _propTypes.default.oneOf([_propTypes.default.object, _propTypes.default.string]).isRequired
+  image: _propTypes.default.oneOfType([_propTypes.default.object, _propTypes.default.string]).isRequired
 };
 var _default = Card;
 exports.default = _default;
@@ -49,7 +49,7 @@ var styles = _reactPrimitives.StyleSheet.create({
     flexDirection: 'row',
     height: 150,
     justifyContent: 'space-between',
-    margin: 16,
+    maxWidth: '100%',
     overflow: 'hidden',
     width: 475
   },
