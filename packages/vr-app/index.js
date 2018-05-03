@@ -3,15 +3,16 @@ import { AppRegistry, StyleSheet, Text, View } from 'react-360';
 
 import Card from 'uc-example-react-eu';
 
-const title = 'Example Card';
-const subtitle = 'Rendered using react-primitives';
-const image = { uri: 'https://source.unsplash.com/random' };
-
 export default class vr_app extends React.Component {
   render() {
     return (
       <View style={styles.panel}>
-        <Card title={title} subtitle={subtitle} image={image} />
+        <Card
+          image={{ uri: 'https://source.unsplash.com/random' }}
+          subtitle="Rendered using react-primitives"
+          title="Example Card"
+          style={{ borderColor: '#eeeeee', borderWidth: 1 }}
+        />
       </View>
     );
   }

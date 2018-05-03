@@ -1,15 +1,15 @@
 import React from 'react';
-
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
 
 import Card from '../src';
 
-const title = 'Example Card';
-const subtitle = 'Rendered using react-primitives';
-const image = { uri: 'https://source.unsplash.com/random' };
-
 storiesOf('Card', module).add('example', () => (
-  <Card title={title} subtitle={subtitle} image={image} />
+  <div style={{ padding: 16 }}>
+    <Card
+      image={{ uri: 'https://source.unsplash.com/random' }}
+      subtitle="Rendered using react-primitives"
+      title="Example Card"
+      style={{ borderColor: '#eeeeee', borderWidth: 1 }}
+    />
+  </div>
 ));

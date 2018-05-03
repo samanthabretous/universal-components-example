@@ -1,15 +1,15 @@
 import React from 'react';
 import propTypes from 'prop-types';
 import {
-  View,
-  Text,
-  Image,
   Animated,
+  Image,
   StyleSheet,
+  Text,
+  View,
 } from '@kkemple/react-primitives';
 
-const Card = ({ title, subtitle, image }) => (
-  <View style={styles.container}>
+const Card = ({ title, subtitle, image, style }) => (
+  <View style={[styles.container, style]}>
     <Image style={styles.image} source={image} />
     <View style={styles.contentContainer}>
       <Text style={styles.title}>{title}</Text>
@@ -19,9 +19,9 @@ const Card = ({ title, subtitle, image }) => (
 );
 
 Card.propTypes = {
-  title: propTypes.string.isRequired,
-  subtitle: propTypes.string.isRequired,
   image: propTypes.oneOfType([propTypes.object, propTypes.string]).isRequired,
+  subtitle: propTypes.string.isRequired,
+  title: propTypes.string.isRequired,
 };
 
 export default Card;
@@ -30,9 +30,6 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'stretch',
     backgroundColor: '#ffffff',
-    borderColor: '#eee',
-    borderRadius: 3,
-    borderWidth: 1,
     flexDirection: 'row',
     height: 150,
     justifyContent: 'space-between',
@@ -49,12 +46,12 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
   },
-  title: {
-    color: '#000000',
-    marginBottom: 16,
-  },
   subtitle: {
     color: '#cccccc',
     fontSize: 12,
+  },
+  title: {
+    color: '#000000',
+    marginBottom: 16,
   },
 });

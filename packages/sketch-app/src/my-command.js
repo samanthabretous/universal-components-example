@@ -4,10 +4,6 @@ import { render, Artboard, Text, View } from 'react-sketchapp';
 
 import Card from 'uc-example-react-eu';
 
-const title = 'Example Card';
-const subtitle = 'Rendered using react-primitives';
-const image = { uri: 'https://source.unsplash.com/random' };
-
 const Document = () => (
   <Artboard
     name="ExampleCard"
@@ -16,7 +12,12 @@ const Document = () => (
       width: (96 + 8) * 4,
     }}
   >
-    <Card title={title} subtitle={subtitle} image={image} />
+    <Card
+      image={{ uri: 'https://source.unsplash.com/random' }}
+      subtitle="Rendered using react-primitives"
+      title="Example Card"
+      style={{ borderColor: '#eeeeee', borderWidth: 1 }}
+    />
   </Artboard>
 );
 
