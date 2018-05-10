@@ -1,6 +1,6 @@
 {
   "name": "uc-example-react-eu",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Components used across all platforms",
   "main": "dist/index.js",
   "browser": "dist/index.js",

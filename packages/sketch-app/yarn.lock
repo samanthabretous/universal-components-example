@@ -3719,9 +3719,9 @@ ua-parser-js@^0.7.9:
   version "0.7.18"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.18.tgz#a7bfd92f56edfb117083b69e31d2aa8882d4b1ed"
 
-uc-example-react-eu@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/uc-example-react-eu/-/uc-example-react-eu-1.0.11.tgz#1a1814d29b8a5bb57c39ea4ad42416969ca42d2b"
+uc-example-react-eu@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/uc-example-react-eu/-/uc-example-react-eu-1.0.12.tgz#1e6b05eb8d5e93579b306979c07064fdc65b8a83"
   dependencies:
     "@kkemple/react-primitives" "0.5.1"
     babel-core "^6.26.3"
