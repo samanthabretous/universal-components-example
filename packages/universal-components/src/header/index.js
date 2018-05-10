@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     maxWidth: '100%',
     overflow: 'hidden',
+    padding: 16,
   },
   contentContainer: {
     alignItems: 'stretch',
@@ -30,8 +31,8 @@ const styles = StyleSheet.create({
     padding: 16,
   },
   image: {
-    width: 150,
     height: 150,
+    width: 150,
   },
   subtitle: {
     color: '#cccccc',
@@ -39,8 +40,8 @@ const styles = StyleSheet.create({
   },
   title: {
     color: '#000000',
-    marginBottom: 16,
     fontSize: 54,
     fontWeight: 'bold',
+    marginBottom: 16,
   },
 });

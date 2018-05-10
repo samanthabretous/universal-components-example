@@ -10,9 +10,7 @@ var _index = _interopRequireDefault(require("../index"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _react2.storiesOf)('Header', module).add('example', (0, _addonInfo.withInfo)({
-  inline: true
-})(function () {
+(0, _react2.storiesOf)('Header', module).add('example', function () {
   return _react.default.createElement("div", {
     style: {
       padding: 16
@@ -25,4 +23,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       borderWidth: 1
     }
   }));
-}));
+});

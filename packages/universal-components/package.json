@@ -1,6 +1,6 @@
 {
   "name": "uc-example-react-eu",
-  "version": "1.0.7",
+  "version": "1.0.11",
   "description": "Components used across all platforms",
   "main": "dist/index.js",
   "browser": "dist/index.js",
@@ -8,14 +8,15 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "@kkemple/react-primitives": "0.5.1",
     "babel-core": "^6.26.3",
     "prop-types": "^15.6.1",
-    "react-docgen": "^2.20.1",
-    "@kkemple/react-primitives": "0.5.1"
+    "react-docgen": "^2.20.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.46",
     "@babel/core": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
     "@babel/preset-react": "^7.0.0-beta.46",
     "@storybook/addon-actions": "^3.4.3",

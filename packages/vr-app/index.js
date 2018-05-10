@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppRegistry, StyleSheet, Text, View } from 'react-360';
 
-import Card from 'uc-example-react-eu';
+import { Card } from 'uc-example-react-eu';
 
 export default class vr_app extends React.Component {
   render() {

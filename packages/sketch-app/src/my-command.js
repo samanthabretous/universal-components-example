@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { render, Artboard, Text, View } from 'react-sketchapp';
 
-import Card from 'uc-example-react-eu';
+import { Card } from 'uc-example-react-eu';
 
 const Document = () => (
   <Artboard
