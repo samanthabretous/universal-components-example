@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Animated,
-  Image,
-  StyleSheet,
-  Text,
-  View,
-} from '@kkemple/react-primitives';
+import { Image, StyleSheet, Text, View } from '@kkemple/react-primitives';
 
 const Card = ({ title, subtitle, image, style }) => (
   <View style={[styles.container, style]}>
