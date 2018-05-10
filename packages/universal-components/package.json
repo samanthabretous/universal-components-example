@@ -8,20 +8,23 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@kkemple/react-primitives": "^0.5.0",
-    "prop-types": "^15.6.1"
+    "babel-core": "^6.26.3",
+    "prop-types": "^15.6.1",
+    "react-docgen": "^2.20.1",
+    "@kkemple/react-primitives": "0.5.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.46",
     "@babel/core": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.46",
     "@babel/preset-react": "^7.0.0-beta.46",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
     "@storybook/addon-actions": "^3.4.3",
+    "@storybook/addon-info": "^3.4.3",
     "@storybook/addon-links": "^3.4.3",
     "@storybook/addons": "^3.4.3",
-    "@storybook/react": "^3.4.3"
+    "@storybook/react": "^3.4.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
   },
   "scripts": {
     "build-storybook": "build-storybook",
