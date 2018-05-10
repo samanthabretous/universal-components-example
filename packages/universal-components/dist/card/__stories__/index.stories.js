@@ -6,13 +6,9 @@ var _react2 = require("@storybook/react");
 
 var _index = _interopRequireDefault(require("../index"));
 
-var _addonInfo = require("@storybook/addon-info");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _react2.storiesOf)('Card', module).add('Example', (0, _addonInfo.withInfo)({
-  inline: true
-})(function () {
+(0, _react2.storiesOf)('Card', module).add('Example', function () {
   return _react.default.createElement("div", {
     style: {
       padding: 16
@@ -28,4 +24,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       borderWidth: 1
     }
   }));
-}));
+});

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Card from 'uc-example-react-eu';
+import { Card } from 'uc-example-react-eu';
 
 class App extends Component {
   render() {

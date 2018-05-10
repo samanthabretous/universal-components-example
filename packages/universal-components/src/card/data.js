@@ -1,15 +1,67 @@
-import React from 'react';
-import { Image, StyleSheet, Text, View } from '@kkemple/react-primitives';
+import React, { Component } from 'react';
+import propTypes from 'prop-types';
+import {
+  Animated,
+  Image,
+  StyleSheet,
+  Text,
+  View,
+} from '@kkemple/react-primitives';
 
-const Card = ({ title, subtitle, image, style }) => (
-  <View style={[styles.container, style]}>
-    <Image style={styles.image} source={image} />
-    <View style={styles.contentContainer}>
-      <Text style={styles.title}>{title}</Text>
-      <Text style={styles.subtitle}>{subtitle}</Text>
+class Card extends Component {
+  static propTypes = {
+    image: propTypes.oneOfType([propTypes.object, propTypes.string]).isRequired,
+    subtitle: propTypes.string.isRequired,
+    title: propTypes.string.isRequired,
+  };
+
+  state = {
+    animatedValue: new Animated.Value(0),
+  };
+
+  componentWillMount = () => {
+    this.colorAnimation = this.state.animatedValue.interpolate({
+      inputRange: [0, 0.7],
+      outputRange: ['#000000', '#111111'],
+      extrapolate: 'clamp',
+    });
+
+    this.opacityAnimation = this.state.animatedValue.interpolate({
+      inputRange: [0.3, 0.8],
+      outputRange: [0, 1],
+      extrapolate: 'clamp',
+    });
+  };
+
+  animateIn = () => {
+    Animated.timing(this.state.animatedValue, {
+      toValue: 1,
+      duration: 750,
+    }).start();
+  };
+
+  render = () => (
+    <View style={[styles.container, this.props.style]}>
+      <Animated.View
+        style={[styles.image, { backgroundColor: this.colorAnimation }]}
+      />
+      <Animated.Image
+        style={[
+          styles.image,
+          {
+            opacity: this.opacityAnimation,
+          },
+        ]}
+        onLoadEnd={() => this.animateIn()}
+        source={this.props.image}
+      />
+      <View style={styles.contentContainer}>
+        <Text style={styles.title}>{this.props.title}</Text>
+        <Text style={styles.subtitle}>{this.props.subtitle}</Text>
+      </View>
     </View>
-  </View>
-);
+  );
+}
 
 export default Card;
 

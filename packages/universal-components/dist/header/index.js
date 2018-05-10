@@ -16,7 +16,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Header = function Header(_ref) {
   var title = _ref.title,
       subtitle = _ref.subtitle,
-      image = _ref.image,
       style = _ref.style;
   return _react.default.createElement(_reactPrimitives.View, {
     style: [styles.container, style]
@@ -40,7 +39,8 @@ var styles = _reactPrimitives.StyleSheet.create({
     backgroundColor: '#ffffff',
     justifyContent: 'space-between',
     maxWidth: '100%',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    padding: 16
   },
   contentContainer: {
     alignItems: 'stretch',
@@ -48,8 +48,8 @@ var styles = _reactPrimitives.StyleSheet.create({
     padding: 16
   },
   image: {
-    width: 150,
-    height: 150
+    height: 150,
+    width: 150
   },
   subtitle: {
     color: '#cccccc',
@@ -57,8 +57,8 @@ var styles = _reactPrimitives.StyleSheet.create({
   },
   title: {
     color: '#000000',
-    marginBottom: 16,
     fontSize: 54,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    marginBottom: 16
   }
 });
