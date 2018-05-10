@@ -1,15 +1,48 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
-import { Image, StyleSheet, Text, View } from '@kkemple/react-primitives';
+import styled from 'styled-components/primitives';
 
-const Card = ({ image, title, subtitle, style }) => (
-  <View style={[styles.container, style]}>
-    <Image style={styles.image} source={image} />
-    <View style={styles.contentContainer}>
-      <Text style={styles.title}>{title}</Text>
-      <Text style={styles.subtitle}>{subtitle}</Text>
-    </View>
-  </View>
+const Container = styled.View`
+  background-color: #ffffff;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+`;
+
+const Image = styled.Image`
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+`;
+
+const ContentContainer = styled.View`
+  align-items: stretch;
+  flex: 1;
+  padding: 16px;
+`;
+
+const Title = styled.Text`
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 8px;
+`;
+
+const SubTitle = styled.Text`
+  color: #ffffff;
+  font-size: 16px;
+`;
+
+const Card = ({ title, subtitle, image, style }) => (
+  <Container style={style}>
+    <Image source={image} />
+    <ContentContainer>
+      <Title>{title}</Title>
+      <SubTitle>{subtitle}</SubTitle>
+    </ContentContainer>
+  </Container>
 );
 
 Card.propTypes = {
@@ -19,37 +52,3 @@ Card.propTypes = {
 };
 
 export default Card;
-
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'stretch',
-    backgroundColor: '#ffffff',
-    flexDirection: 'row',
-    height: 450,
-    justifyContent: 'space-between',
-    maxWidth: '100%',
-    overflow: 'hidden',
-    width: 300,
-  },
-  contentContainer: {
-    alignItems: 'stretch',
-    flex: 1,
-    padding: 16,
-  },
-  image: {
-    width: '100%',
-    position: 'absolute',
-    height: '100%',
-    top: 0,
-    left: 0,
-  },
-  subtitle: {
-    color: '#ffffff',
-    fontSize: 12,
-  },
-  title: {
-    color: '#ffffff',
-    fontSize: 24,
-    marginBottom: 8,
-  },
-});
