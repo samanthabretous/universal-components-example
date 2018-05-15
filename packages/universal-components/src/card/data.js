@@ -37,6 +37,7 @@ class Card extends Component {
     Animated.timing(this.state.animatedValue, {
       toValue: 1,
       duration: 750,
+      // can't use `useNativeDriver` because we animate a bg color
     }).start();
   };
 
